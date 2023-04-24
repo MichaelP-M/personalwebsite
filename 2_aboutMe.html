@@ -1,0 +1,82 @@
+<!-- Author: Michael Panopio-Mones
+      Date: 04/24/2023
+      Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="wide=device-width, initial-scale=1.0">
+    <title>Michael Panopio-Mones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/2_aboutstyles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <div class="MicLogo">
+                <img src="images/MicSquared Logo.png" class="logo-img">
+            </div>
+            <img src="images/menu-regular-24.png" class="menu-img" id="menu-button">
+            <ul class="nav-links">
+                <li><a href="1_homePage.html"><img src="images/home-solid-24.png" class="nav-img"><span class="links-name">&emsp;Home</span></a><span class="tips">Home</span></li>
+                <li><a href="2_aboutMe.html"><img src="images/user-circle-solid-24.png" class="nav-img"><span class="links-name">&emsp;About Me</span></a><span class="tips">About Me</span></li>
+                <li><a href="3_skills.html"><img src="images/food-menu-solid-24.png" class="nav-img"><span class="links-name">&emsp;Skills</span></a><span class="tips">Skills</span></li>
+                <li><a href="4_projects.html"><img src="images/html5-logo-24.png" class="nav-img"><span class="links-name">&emsp;Projects</span></a><span class="tips">Projects</span></li>
+                <li><a href="5_contactme.html"><img src="images/id-card-solid-24.png" class="nav-img"><span class="links-name">&emsp;Contact Me</span></a><span class="tips">Contact Me</span></li>
+                <div class="active"></div>
+            </ul>
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="name-class">
+                        <div class="name">Michael Panopio-Mones</div>
+                        <div class="class">COP 3835</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 85vh; float:left; height:100px; margin:10px" class="landing-page">
+            <h1>About Me</h1>
+            <p>I am a senior in Florida International University about to graduate with his Bachelors in Computer Science. I love technology and how it has been able 
+                to connect us and allow a plethora of content to be readily avaliable to us. I consume a lot of content on the internet and it is why I fell in love with 
+                Computer Science.</p> 
+            <p>I love watching videos on YouTube, livestreams on Twitch, and searching things on google whenever I feel uneducated on a topic. For fun, I am usually 
+                watching a tv show or an anime, or playing video games with my friends. I also love to go out and have fun with them as well: drinking, eating or just haning out.
+                I am an extrovert so while we are out, I am always happy to spark a conversation with others or even strangers if they reciprocarte. </p>
+        </div>
+        <div style="width: 100px; float:left; height:100px; margin:10px" class="group-cards">
+            <div class="card">
+                <img src="images/Valorant logo.png" class="Valorant-logo">
+            </div>
+
+            <div class="card">
+                <img src="images/Discord logo.png" class="Discord-logo">
+            </div>
+
+            <div class="card">
+                <img src="images/YouTube Logo.png" class="YouTube-logo">
+            </div>
+
+            <div class="card">
+                <img src="images/twitch logo.png" class="twitch-logo">
+            </div>
+
+            <div class="card">
+                <img src="images/Heat Logo.png" class="Heat-logo">
+            </div>
+
+            <div class="card">
+                <img src="images/Panthers Logo.png" class="FIU-logo">
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuButton = document.querySelector("#menu-button");
+        let sidenav = document.querySelector(".side-nav");
+
+        menuButton.onclick = function() {
+            sidenav.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

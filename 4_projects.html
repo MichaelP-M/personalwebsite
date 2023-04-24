@@ -1,0 +1,70 @@
+<!-- Author: Michael Panopio-Mones
+      Date: 04/24/2023
+      Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="wide=device-width, initial-scale=1.0">
+    <title>Michael Panopio-Mones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/4_projectsstyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <div class="MicLogo">
+                <img src="images/MicSquared Logo.png" class="logo-img">
+            </div>
+            <img src="images/menu-regular-24.png" class="menu-img" id="menu-button">
+            <ul class="nav-links">
+                <li><a href="1_homePage.html"><img src="images/home-solid-24.png" class="nav-img"><span class="links-name">&emsp;Home</span></a><span class="tips">Home</span></li>
+                <li><a href="2_aboutMe.html"><img src="images/user-circle-solid-24.png" class="nav-img"><span class="links-name">&emsp;About Me</span></a><span class="tips">About Me</span></li>
+                <li><a href="3_skills.html"><img src="images/food-menu-solid-24.png" class="nav-img"><span class="links-name">&emsp;Skills</span></a><span class="tips">Skills</span></li>
+                <li><a href="4_projects.html"><img src="images/html5-logo-24.png" class="nav-img"><span class="links-name">&emsp;Projects</span></a><span class="tips">Projects</span></li>
+                <li><a href="5_contactme.html"><img src="images/id-card-solid-24.png" class="nav-img"><span class="links-name">&emsp;Contact Me</span></a><span class="tips">Contact Me</span></li>
+                <div class="active"></div>
+            </ul>
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="name-class">
+                        <div class="name">Michael Panopio-Mones</div>
+                        <div class="class">COP 3835</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project-cards">
+            <div class="WebCard">
+                <video controls autoplay class="WebVideo">
+                    <source src="media/HW website.mov" type="video/mp4">
+                </video>
+                <p class="web-desc">Homework Website</p>
+            </div>
+
+            <div class="WebCard">
+                <video controls autoplay class="WebVideo">
+                    <source src="media/Personal Website.mov" type="video/mp4">
+                </video>
+                <p class="web-desc">Personal Website</p>
+            </div>
+
+            <div class="card">
+                <video controls autoplay class="AppVideo">
+                    <source src="media/Score App.mov" type="video/mp4">
+                </video>
+                <p class="app-desc">Score Keeping App</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuButton = document.querySelector("#menu-button");
+        let sidenav = document.querySelector(".side-nav");
+
+        menuButton.onclick = function() {
+            sidenav.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
